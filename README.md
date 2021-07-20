@@ -2,6 +2,12 @@
 
 The unicorn product of Tesla, Cybertruck, is without doubt one of the most eccentric-designed, versatile one among its own kind. However, there is not a small number of people find its design to be unaesthetic, and come with unneccessary additions. This sentiment-analysis is aiming to find out how welcoming the public are to the Cybertruck, and what kinds of criticisms are the most popular right now. So that, we could assess the impact the Cybertruck will make on the industry, and how much revenue will it generate for the company.
 
+## Collaborating 
+
+-In order for this project to success, not only data analysis process has to be precise and efficient, we will also need in-depth knowledge on the truck market. So what can collaborators do to contribute to this project ?
+
+1. Read and aggregate articles on Cybertruck：Put it in 1 file what you consider most impactful point to the analysis.
+2. Find out valuable resouces that are not limited to data type.
 
 ## Analysis Conducting Procedure
 
