@@ -5,7 +5,7 @@ The unicorn product of Tesla, Cybertruck, is without doubt one of the most eccen
 
 ## Analysis Conducting Procedure
 
-###1. Data Collecting 
+### 1. Data Collecting 
 
 -This maybe the most cumbersome part of this projects as many questions need to answered in order to have proper, high-influential datasets such as:
 
@@ -13,8 +13,8 @@ The unicorn product of Tesla, Cybertruck, is without doubt one of the most eccen
 + Where will we get the data from ? Twitter, Facebook, Reddit, and Tesla.
 + How will we get it ? Through access to APIs of those SMS, and scraping Tesla website data.
 
-2. Data Wrangling
-3. EDA (Exploratory Data Analysis)
-4. Preparing data for training
-5. Modelling
-6. The Result
+### 2. Data Wrangling
+### 3. EDA (Exploratory Data Analysis)
+### 4. Preparing data for training
+### 5. Modelling
+### 6. The Result
