@@ -20,7 +20,12 @@ The unicorn product of Tesla, Cybertruck, is without doubt one of the most eccen
 + How will we get it ? Through access to APIs of those SMS, and scraping Tesla website data.
 
 ### 2. Data Wrangling
+- This part includes cleaning, standardizing and feature engineering (if neccessary): Currently being carried out
 ### 3. EDA (Exploratory Data Analysis)
+- Performing multiple visualizations and deduce a substantial story from it.
 ### 4. Preparing data for training
+- This part should be the same as step 2, but since its original, we need to label manually, or finding out pre-trained model to label the data before train: Currently being carried out.
 ### 5. Modelling
+-  We are trying out Logistic Regression using sklearn and numpy: Currently being carried out
 ### 6. The Result
+- Expected result is to show different sentiment toward diffent aspects of the Cybertruck. Thus estimate which one should be made changes to.
