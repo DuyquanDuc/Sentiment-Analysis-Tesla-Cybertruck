@@ -35,6 +35,6 @@ The unicorn product of Tesla, Cybertruck, is without doubt one of the most eccen
 - Expected result is to show different sentiment toward diffent aspects of the Cybertruck. Thus estimate which one should be made changes to:
 + Built a sentiment chart around a selected topic. In this case I choose FSD (Full-self-driving) feature.
 
-#Conclusion
+# Conclusion
 
 After successfully conducting this analysis, these code can be reused and the project can be expanded substantially depending on the person's purposes. Special thanks to NGUYEN THANH HAI and SAM CRAWSHAYS for supportting me with this project. Others CREDITS goes for NGUYEN HUNG HAO for collectting the twitter data, NGUYEN MINH HIEU for cleaning, and NGUYEN HA GIA HUY for market researching. Honorable mentions team GO Digital !  
