@@ -1,0 +1,51 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Sep 12 00:23:37 2021
+
+@author: nhosonca
+"""
+
+
+import pandas as pd
+import numpy as np
+
+from os import chdir, getcwd
+wd=getcwd()
+chdir(wd)
+
+#Read the data
+df = pd.read_csv("/Users/nhosonca/Desktop/Data_Normalized.csv")
+
+df.head()
+
+df = df.drop(['col_0','Username'], axis=1)
+
+df = df.drop_duplicates(ignore_index=True)
+
+
+#Remove special character
+spec_chars = ["!",'"',"#","%","&","'","(",")","*","+",",","-",".","/",":",";","<","=",">","?","@","[","\\","]","^","_","`","{","|","}","~","–"]
+for char in spec_chars:
+    df["Text"] = df["Text"].str.replace(char, ' ',)
+    
+    
+#Normalization
+df["Text"]=df["Text"].str.lower()
+
+#Stopword
+pip install nltk
+from nltk import stopwords
+stop = stopwords.words('english')
+df["Text"] = df["Text"].apply(lambda x: " ".join(x for x in x.split() if x not in stop))
+
+
+#Lemmatization
+w_tokenizer = nltk.tokenize.WhitespaceTokenizer()
+lemmatizer = nltk.stem.WordNetLemmatizer()
+
+def lemmatize_text(text):
+    return [lemmatizer.lemmatize(w) for w in w_tokenizer.tokenize(text)]
+df["Text"] = df["Text"].apply(lemmatize_text)
+
+df.to_csv('"/Users/nhosonca/Desktop/Cleaning_Data.csv")
