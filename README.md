@@ -9,7 +9,7 @@ The unicorn product of Tesla, Cybertruck, is without doubt one of the most eccen
 1. Read and aggregate articles on Cybertruck：Put it in 1 file what you consider most impactful point to the analysis.
 - NGUYEN HA GIA HUY
 2. Cleaning and simple wrangling.
-- NUYEN MINH HIEU
+- NGUYEN MINH HIEU
 
 ## Analysis Conducting Procedure
 
@@ -29,12 +29,18 @@ The unicorn product of Tesla, Cybertruck, is without doubt one of the most eccen
 - This part should be the same as step 2, but since its original, we need to label manually, or finding out pre-trained model to label the data before train: 
 + After researching I decided to use Google Languagev1 in the package google.api to classify the dataset. It yielded results range from -1 to 1 with -1 as most negative, 1 as most positive
 ### 4. Modelling
--  We are trying out Logistic Regression using sklearn and numpy: 
+-  We are trying out Logistic Regression using sklearn, SpaCy and numpy: 
 + Using simple logistic regression from spaCy. Accuracy yielded approximately 0.8.
 ### 5. Visualizing
 - Expected result is to show different sentiment toward diffent aspects of the Cybertruck. Thus estimate which one should be made changes to:
 + Built a sentiment chart around a selected topic. In this case I choose FSD (Full-self-driving) feature.
 
-# Conclusion
+# Conclusion & Next Steps
 
-After successfully conducting this analysis, these code can be reused and the project can be expanded substantially depending on the person's purposes. Special thanks to NGUYEN THANH HAI and SAM CRAWSHAYS for supportting me with this project. Others CREDITS goes for NGUYEN HUNG HAO for collectting the twitter data, NGUYEN MINH HIEU for cleaning, and NGUYEN HA GIA HUY for market researching. Honorable mentions team GO Digital !  
+After successfully conducting this analysis, these code can be reused and the project can be expanded substantially depending on the person's purposes. Special thanks to NGUYEN THANH HAI and SAM CRAWSHAYS for supportting me with this project. Others CREDITS goes for NGUYEN HUNG HAO for collectting the twitter data, NGUYEN MINH HIEU for cleaning, and NGUYEN HA GIA HUY for market researching. Honorable mentions team GO Digital ! 
+
+Next Steps in order to expand this project including:
+
+1. Mass collecting & labelling data (Any kind of topics applied)
+2. Create an overtime- sentiment to see how sentiments changed overtime.
+3. Try to shed light on trending topics and how we can make use of it.
